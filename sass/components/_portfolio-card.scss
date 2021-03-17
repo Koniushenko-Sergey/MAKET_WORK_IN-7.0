@@ -1,0 +1,117 @@
+/*Секция-кнопок  */
+
+.card__section {
+  font-family: Roboto, sans-serif;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filters__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters__item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.filters__button {
+  outline: none;
+  border: none;
+  background-color: var(--background-white-grey);
+  border-radius: 4px;
+  width: 128px;
+  height: 38px;
+  color: var(--back-text);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 250ms var(--bazier);
+
+  &:hover {
+    background-color: var(--blue-text);
+    box-shadow: var(--box-team-shadow);
+    cursor: pointer;
+    color: var(--white-text);
+  }
+
+  &:focus {
+    background-color: var(--blue-text);
+    color: var(--white-text);
+  }
+}
+
+/*Секция-карточек технокряка  */
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__description {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--black-text);
+  letter-spacing: 0.06em;
+  outline: none;
+}
+
+.card__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card__item {
+  border: 1px solid var(--border-card);
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+
+  &:hover {
+    box-shadow: var(--box-team-shadow);
+  }
+
+  &:hover .overlay {
+    transform: translateY(0);
+  }
+}
+
+.card__container {
+  padding: 20px 24px;
+}
+
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(101%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--bazier);
+}
+
+.overlay__text {
+  margin: 0;
+  padding: 63px 20px;
+  color: var(--white-text);
+  font-size: 18px;
+  line-height: 1.56;
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../WORK_IN-MAKE-6.0-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WORK_MAKET_7.0"
+	}
+}
